@@ -17,11 +17,6 @@
       >creating a bug issue with steps and screenshot to reproduce.</a
       >
     </p>
-    <nuxt-link
-      :to="`/${urlPrefix}/explore/collectibles`"
-      class="text-k-blue hover:text-k-blue-hover">
-      Explore NFTs and Collections
-    </nuxt-link>
   </div>
 </template>
 
@@ -31,7 +26,6 @@ import type { NuxtError } from '@nuxt/types'
 const props = defineProps<{
   error: NuxtError
 }>()
-const { urlPrefix } = usePrefix()
 const headline = computed(() => {
   switch (props.error?.statusCode) {
     case 404:

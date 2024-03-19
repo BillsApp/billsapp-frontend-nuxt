@@ -1,6 +1,6 @@
 <template>
   <div>
-<!--    <Navbar/>-->
+    <NavBar />
     <main>
       <div>
         <Error
@@ -18,16 +18,16 @@
 </template>
 
 <script lang="ts" setup>
-const {$config} = useNuxtApp()
-const route = useRoute()
+// const {$config} = useNuxtApp()
+// const route = useRoute()
 
-useHead({
-  link: [
-    {
-      hid: 'canonical',
-      rel: 'canonical',
-      href: $config.public.baseUrl + route.path,
-    },
-  ],
-})
+// useHead({
+//   link: [
+//     {
+//       hid: 'canonical',
+//       rel: 'canonical',
+//       href: $config.public.baseUrl + route.path,
+//     },
+//   ],
+// })
 </script>

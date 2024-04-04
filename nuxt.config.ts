@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   ssr: true,
 
   typescript: {
-    typeCheck: true
+    typeCheck: true,
+    tsConfig: { compilerOptions: { baseUrl: ".", }, },
   },
 
   modules: [
@@ -18,6 +19,8 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ['./stores/**'],
   },
+
+  // buildModules: ['@nuxt/typescript-build'],
 
   // Global CSS: https://nuxt.com/docs/api/nuxt-config#components
   css: [

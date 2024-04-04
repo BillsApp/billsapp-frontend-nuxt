@@ -1,12 +1,15 @@
 <script lang="ts" setup>
-
 definePageMeta({
   layout: 'default',
+  resource: 'auth'
 })
 </script>
 
 <template>
   <div>
-    <LandingPage />
+    Profile Main
+    <div>
+      <ProfileCalendar />
+    </div>
   </div>
 </template>

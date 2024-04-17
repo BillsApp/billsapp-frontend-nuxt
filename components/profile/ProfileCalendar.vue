@@ -58,9 +58,9 @@ const calendarOptions = reactive({
     interactionPlugin // needed for dateClick
   ],
     headerToolbar: {
-    left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      right: 'prev,next today',
+      left: 'title',
+      center: '',
   },
   initialView: 'dayGridMonth',
     initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed

@@ -51,12 +51,12 @@ const goToProfilePage = async () => {
         v-else
       >
         <UButton
-          class="mr-[5px]"
           @click="goToProfilePage"
         >
           Profile
           <UIcon name="i-heroicons-user" />
         </UButton>
+        <span class="mx-[5px]"></span>
         <UButton
           @click="logout"
         >

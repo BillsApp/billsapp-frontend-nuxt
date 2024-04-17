@@ -63,15 +63,15 @@ const calendarOptions = reactive({
       center: '',
   },
   initialView: 'dayGridMonth',
-    initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
-    editable: true,
-    selectable: true,
-    selectMirror: true,
-    dayMaxEvents: true,
-    weekends: true,
-    select: handleDateSelect,
-    eventClick: handleEventClick,
-    eventsSet: handleEvents
+  initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
+  editable: true,
+  selectable: true,
+  selectMirror: true,
+  dayMaxEvents: true,
+  weekends: true,
+  select: handleDateSelect,
+  eventClick: handleEventClick,
+  eventsSet: handleEvents
   /* you can update a remote database when these fire:
   eventAdd:
   eventChange:
